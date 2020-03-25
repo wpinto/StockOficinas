@@ -6,3 +6,5 @@ Lo que se plantea es que usuarios clave de cada oficina puedan logearse e ir car
 Desde la oficina central se carga la compra y se actualiza el estado de lo que se va a comprar vs lo que se deja para un futuro. 
 
 Tambien se debe actualizar cuando la compra es enviada y recibida para tener un seguimiento. 
+
+Walter Pinto - Leg 99561
