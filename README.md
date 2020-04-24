@@ -23,6 +23,7 @@ recursos (Auriculares, mouse, teclado, kit, mochila, otro)
 -Borrar
 -Leer
 -Listar
+
 -Estado (Pedido - Pendiente - Comprado - En transito)
 
 Oficina
