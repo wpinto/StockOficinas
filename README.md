@@ -7,13 +7,13 @@ Tambien se debe actualizar cuando la compra es enviada y recibida para tener un 
 
 Walter Pinto - Leg 99561
 
-Endpoints:
+### Endpoints:
 
-Usuarios: ID ; Nombre ; Mail 
+* Usuarios: ID ; Nombre ; Mail 
 
-Oficinas: ID ; Nombre
+* Oficinas: ID ; Nombre
 
-Recursos ID ; Nombre
+* Recursos ID ; Nombre
 
 Stock: IdOficina ; IdRecurso ; Estado
 
@@ -31,7 +31,7 @@ Tips:
                                                                                   
 
     REQUEST
-		__GET__ /usuarios
+		GET /usuarios
     RESPONSE
 		200 OK
 		{Usuario: id;nombre;mail}
@@ -42,7 +42,7 @@ Tips:
 **************************************************************************************
 
     REQUEST
-		*GET* /usuarios/{id}
+		GET /usuarios/{id}
     RESPONSE
 		200 OK
 		{Usuario: id;nombre;mail}
