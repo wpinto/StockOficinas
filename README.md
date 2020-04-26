@@ -31,7 +31,7 @@ Tips:
                                                                                   
 
     REQUEST
-	GET /usuarios
+		GET /usuarios
     RESPONSE
 		200 OK
 		{Usuario: id;nombre;mail}
