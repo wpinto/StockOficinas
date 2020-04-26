@@ -30,14 +30,14 @@ Tips:
 ##                              USUARIOS /usuarios                                  
                                                                                   
 
-				**REQUEST
+    **REQUEST
 	GET /usuarios
-RESPONSE
-		200 OK
-		{Usuario: id;nombre;mail}
-		{Usuario: id;nombre;mail}
-		{Usuario: id;nombre;mail}
-		"links":{"rel": "Usuarios","uri": "/usuarios/id"}**
+    RESPONSE
+	200 OK
+	{Usuario: id;nombre;mail}
+	{Usuario: id;nombre;mail}
+	{Usuario: id;nombre;mail}
+	"links":{"rel": "Usuarios","uri": "/usuarios/id"}**
 		
 **************************************************************************************
 
