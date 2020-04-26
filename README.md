@@ -27,11 +27,11 @@ Tips:
 
 
                                                                                   
-##                              USUARIOS /usuarios                                  
+##                              USUARIOS /usuarios				  
                                                                                   
 
     REQUEST
-		**GET** /usuarios
+		__GET__ /usuarios
     RESPONSE
 		200 OK
 		{Usuario: id;nombre;mail}
@@ -42,7 +42,7 @@ Tips:
 **************************************************************************************
 
     REQUEST
-		**GET** /usuarios/{id}
+		*GET* /usuarios/{id}
     RESPONSE
 		200 OK
 		{Usuario: id;nombre;mail}
