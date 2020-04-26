@@ -41,48 +41,48 @@ Tips:
 		
 **************************************************************************************
 
-REQUEST
-	GET /usuarios/{id}
-RESPONSE
+    REQUEST
+		GET /usuarios/{id}
+    RESPONSE
 		200 OK
 		{Usuario: id;nombre;mail}
 		"links":{"rel": "Oficina","uri": "/oficinas/usuarios/id"}
-RESPONSE
+    RESPONSE
 		404 Not Found
 		"links":{"rel": "Usuarios","uri": "/usuarios"}
 		
 **************************************************************************************
 
-REQUEST
-	POST /usuarios
-	{nombre;mail}
-RESPONSE
-	201 Created
-	"links":{"rel": "Usuario","uri": "/usuarios/id"}
+    REQUEST
+		POST /usuarios
+		{nombre;mail}
+    RESPONSE
+		201 Created
+		"links":{"rel": "Usuario","uri": "/usuarios/id"}
 
 **************************************************************************************
 
-REQUEST
-	PATCH /usuarios/{id}
-	{nombre;mail}
-RESPONSE
-	201 Created
-	"links":{"rel": "Usuario","uri": "/usuarios/id"}
+    REQUEST
+		PATCH /usuarios/{id}
+	    	{nombre;mail}
+    RESPONSE
+		201 Created
+		"links":{"rel": "Usuario","uri": "/usuarios/id"}
 
 **************************************************************************************
 
-REQUEST
-	DELETE /usuarios
-RESPONSE
-	403 Forbidden
+    REQUEST
+		DELETE /usuarios
+    RESPONSE
+		403 Forbidden
 
 **************************************************************************************
 
-REQUEST
-	DELETE /usuarios/{id}
-RESPONSE
-	200 OK
-	"links":{"rel": "Usuario","uri": "/usuarios"}
+    REQUEST
+		DELETE /usuarios/{id}
+    RESPONSE
+		200 OK
+		"links":{"rel": "Usuario","uri": "/usuarios"}
 
 
                                                                                   
@@ -90,9 +90,9 @@ RESPONSE
                                                                                  
 
 
-REQUEST
-	GET /oficinas
-RESPONSE
+    REQUEST
+		GET /oficinas
+    RESPONSE
 		200 OK
 		{Oficina: id;Nombre}
 		{Oficina: id;Nombre}
@@ -101,48 +101,48 @@ RESPONSE
 
 **************************************************************************************
 
-REQUEST
-	GET /oficinas/{id}
-RESPONSE
+    REQUEST
+		GET /oficinas/{id}
+    RESPONSE
 		200 OK
 		{Oficina: id;nombre;idusuario;usuario}
 		"links":{"rel": "Oficina","uri": "/oficinas/id/usuarios"} 
-RESPONSE
+    RESPONSE
 		404 Not Found
 		"links":{"rel": "Oficinas","uri": "/oficinas"}
 		
 **************************************************************************************
 
-REQUEST
-	POST /oficinas
-	{nombre;idusuario}
-RESPONSE
-	201 Created
-	"links":{"rel": "Usuario","uri": "/oficinas/id"}
+    REQUEST
+		POST /oficinas
+		{nombre;idusuario}
+    RESPONSE
+		201 Created
+		"links":{"rel": "Usuario","uri": "/oficinas/id"}
 
 **************************************************************************************
 
-REQUEST
-	PATCH /oficinas/{id}
-	{nombre;idusuario}
-RESPONSE
-	201 Created
-	"links":{"rel": "Oficina","uri": "/oficinas/id"}
+    REQUEST
+		PATCH /oficinas/{id}
+		{nombre;idusuario}
+    RESPONSE
+		201 Created
+		"links":{"rel": "Oficina","uri": "/oficinas/id"}
 
 **************************************************************************************
 
-REQUEST
-	DELETE /oficinas
-RESPONSE
-	403 Forbidden
+    REQUEST
+		DELETE /oficinas
+    RESPONSE
+		403 Forbidden
 
 **************************************************************************************
 
-REQUEST
-	DELETE /oficinas/{id}
-RESPONSE
-	200 OK
-	"links":{"rel": "Oficinas","uri": "/oficinas"}
+    REQUEST
+		DELETE /oficinas/{id}
+    RESPONSE
+		200 OK
+		"links":{"rel": "Oficinas","uri": "/oficinas"}
 
 
                                                                                   
@@ -150,9 +150,9 @@ RESPONSE
                                                                                   
 
 
-REQUEST
-	GET /recursos
-RESPONSE
+    REQUEST
+		GET /recursos
+    RESPONSE
 		200 OK
 		{Recurso: id;Nombre}
 		{Recurso: id;Nombre}
@@ -161,47 +161,47 @@ RESPONSE
 
 **************************************************************************************
 
-REQUEST
-	GET /recursos/{id}
-RESPONSE
+    REQUEST
+		GET /recursos/{id}
+    RESPONSE
 		200 OK
 		{Recurso: id;nombre} 
-RESPONSE
+    RESPONSE
 		404 Not Found
 		"links":{"rel": "Recurso","uri": "/recursos"}
 		
 **************************************************************************************
 
-REQUEST
-	POST /recursos
-	{nombre}
-RESPONSE
-	201 Created
-	"links":{"rel": "Recurso","uri": "/recursos/id"}
+    REQUEST
+		POST /recursos
+		{nombre}
+    RESPONSE
+		201 Created
+		"links":{"rel": "Recurso","uri": "/recursos/id"}
 
 **************************************************************************************
 
-REQUEST
-	PATCH /recursos/{id}
-	{nombre}
-RESPONSE
-	201 Created
-	"links":{"rel": "Recurso","uri": "/recursos/id"}
+    REQUEST
+		PATCH /recursos/{id}
+		{nombre}
+    RESPONSE
+		201 Created
+		"links":{"rel": "Recurso","uri": "/recursos/id"}
 
 **************************************************************************************
 
-REQUEST
-	DELETE /recursos
-RESPONSE
-	403 Forbidden
+    REQUEST
+		DELETE /recursos
+    RESPONSE
+		403 Forbidden
 
 **************************************************************************************
 
-REQUEST
-	DELETE /recursos/{id}
-RESPONSE
-	200 OK
-	"links":{"rel": "Recurso","uri": "/recursos"}
+    REQUEST
+		DELETE /recursos/{id}
+    RESPONSE
+		200 OK
+		"links":{"rel": "Recurso","uri": "/recursos"}
 
 
                                                                                   
