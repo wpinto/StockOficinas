@@ -31,7 +31,7 @@ Tips:
                                                                                   
 
     REQUEST
-		GET /usuarios
+		**GET** /usuarios
     RESPONSE
 		200 OK
 		{Usuario: id;nombre;mail}
@@ -42,7 +42,7 @@ Tips:
 **************************************************************************************
 
     REQUEST
-		GET /usuarios/{id}
+		**GET** /usuarios/{id}
     RESPONSE
 		200 OK
 		{Usuario: id;nombre;mail}
@@ -209,9 +209,9 @@ Tips:
                                                                                   
 
 
-REQUEST
-	GET /stocks
-RESPONSE
+    REQUEST
+		GET /stocks
+    RESPONSE
 		200 OK
 		{Stock: id;idoficina;oficina;idrecurso;recurso;estado}
 		{Stock: id;idoficina;oficina;idrecurso;recurso;estado}
@@ -220,67 +220,68 @@ RESPONSE
 
 **************************************************************************************
 
-REQUEST
-	GET /stocks/{id}
-RESPONSE
+    REQUEST
+		GET /stocks/{id}
+    RESPONSE
 		200 OK
 		{Stock: id;idoficina;oficina;idrecurso;recurso;estado}
 		"links":{"rel": "Recurso","uri": "/stocks/{id}"}
                 {"rel": "Recurso","uri": "/stocks/{id}/oficinas"}
-				{"rel": "Recurso","uri": "/stocks/{id}/estado"}
-				{"rel": "Recurso","uri": "/stocks/{id}/recursos"}
-				{"rel": "Recurso","uri": "/stocks/{id}/oficinas/"}
-RESPONSE
+		{"rel": "Recurso","uri": "/stocks/{id}/estado"}
+		{"rel": "Recurso","uri": "/stocks/{id}/recursos"}
+		{"rel": "Recurso","uri": "/stocks/{id}/oficinas/"}
+    RESPONSE
 		404 Not Found
 		"links":{"rel": "Stock","uri": "/stocks"}
 		
 **************************************************************************************
 
-REQUEST
-	POST /stocks
-	{oficina;recurso}
-RESPONSE
-	201 Created
-	"links":{"rel": "Stock","uri": "/stocks/id"}
+    REQUEST
+		POST /stocks
+		{oficina;recurso}
+    RESPONSE
+		201 Created
+		"links":{"rel": "Stock","uri": "/stocks/id"}
 
 **************************************************************************************
 
-REQUEST
-	PATCH /stocks/{id}
-	{recurso;estado}
-RESPONSE
-	201 Created
-	"links":{"rel": "Stock","uri": "/stocks/id"}
+    REQUEST
+		PATCH /stocks/{id}
+		{recurso;estado}
+    RESPONSE
+		201 Created
+		"links":{"rel": "Stock","uri": "/stocks/id"}
 
 **************************************************************************************
 
-REQUEST
-	PATCH /stocks/oficinas/{id}
-	{recurso;estado}
-RESPONSE
-	201 Created
-	"links":{"rel": "Stock","uri": "/stocks/id"}
+    REQUEST
+		PATCH /stocks/oficinas/{id}
+		{recurso;estado}
+    RESPONSE
+		201 Created
+		"links":{"rel": "Stock","uri": "/stocks/id"}
 
 **************************************************************************************
 
-REQUEST
-	DELETE /stocks
-RESPONSE
-	403 Forbidden
+    REQUEST
+		DELETE /stocks
+    RESPONSE
+		403 Forbidden
 
 **************************************************************************************
 
-REQUEST
-	DELETE /stocks/{id}
-RESPONSE
-	200 OK
-	"links":{"rel": "Stock","uri": "/stocks"}
+    REQUEST
+		DELETE /stocks/{id}
+    RESPONSE
+		200 OK
+		"links":{"rel": "Stock","uri": "/stocks"}
 
 **************************************************************************************
 
-REQUEST
-	DELETE /stocks/oficinas/{id}
-RESPONSE
-	200 OK
-	"links":{"rel": "Stock","uri": "/stocks"}
+    REQUEST
+		DELETE /stocks/oficinas/{id}
+    RESPONSE
+		200 OK
+		"links":{"rel": "Stock","uri": "/stocks"}
 
+**************************************************************************************
