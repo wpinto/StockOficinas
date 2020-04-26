@@ -18,11 +18,11 @@ Recursos ID ; Nombre
 Stock: IdOficina ; IdRecurso ; Estado
 
 Tips: 
-1 - Siempre que aparece /recurso/id se entiende que el id es del recurso anteriormente expresado.\n
-2 - Si aparece /recurso1/id/recurso2 el id corresponde al recurso1
-3 - Si aparece /recurso1/id/recurso2/id el primer id corresponde al primer recurso y el segundo al
+1. - Siempre que aparece /recurso/id se entiende que el id es del recurso anteriormente expresado.\n
+2. - Si aparece /recurso1/id/recurso2 el id corresponde al recurso1
+3. - Si aparece /recurso1/id/recurso2/id el primer id corresponde al primer recurso y el segundo al
 	segundo recurso.
-4 - Estado puede tomar 4 valores. No hay CRUD para el mismo y cada uno tiene un ID 
+4. - Estado puede tomar 4 valores. No hay CRUD para el mismo y cada uno tiene un ID 
 	Pedido(11) -> Comprado(12) -> En transito(13) -> Recibido(14) -> Asignado(15)
 
 
@@ -30,14 +30,14 @@ Tips:
 ##                              USUARIOS /usuarios                                  
                                                                                   
 
-'REQUEST
+**REQUEST
 	GET /usuarios
 RESPONSE
 		200 OK
 		{Usuario: id;nombre;mail}
 		{Usuario: id;nombre;mail}
 		{Usuario: id;nombre;mail}
-		"links":{"rel": "Usuarios","uri": "/usuarios/id"} '
+		"links":{"rel": "Usuarios","uri": "/usuarios/id"}**
 		
 **************************************************************************************
 
