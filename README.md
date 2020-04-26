@@ -15,9 +15,9 @@ Walter Pinto - Leg 99561
 
 * Recursos ID ; Nombre
 
-Stock: IdOficina ; IdRecurso ; Estado
+* Stock: IdOficina ; IdRecurso ; Estado
 
-Tips: 
+#### Tips: 
 1.  Siempre que aparece /recurso/id se entiende que el id es del recurso anteriormente expresado.
 2.  Si aparece /recurso1/id/recurso2 el id corresponde al recurso1
 3.  Si aparece /recurso1/id/recurso2/id el primer id corresponde al primer recurso y el segundo al
