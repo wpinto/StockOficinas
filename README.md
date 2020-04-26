@@ -27,17 +27,17 @@ Tips:
 
 
                                                                                   
-#                              USUARIOS /usuarios                                  
+##                              USUARIOS /usuarios                                  
                                                                                   
 
-REQUEST
+'REQUEST
 	GET /usuarios
 RESPONSE
 		200 OK
 		{Usuario: id;nombre;mail}
 		{Usuario: id;nombre;mail}
 		{Usuario: id;nombre;mail}
-		"links":{"rel": "Usuarios","uri": "/usuarios/id"} 
+		"links":{"rel": "Usuarios","uri": "/usuarios/id"} '
 		
 **************************************************************************************
 
@@ -86,7 +86,7 @@ RESPONSE
 
 
                                                                                   
-#                              OFICINAS /oficinas                                  
+##                              OFICINAS /oficinas                                  
                                                                                  
 
 
